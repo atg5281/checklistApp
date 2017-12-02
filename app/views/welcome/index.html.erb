@@ -1,5 +1,10 @@
 <h1>To-Do Checklist</h1>
-
+<ul>
+<% @items.each do |item| %>
+ <li> <%=item.name %> </li>
+<% end %>
+</ul>
+<%= render "items/new" %>
 <!--
  Tasks:
    1. Checklist item MVC start

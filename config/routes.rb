@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   get 'items/getItems'
   get 'items/deleteItem/:id' => 'items#deleteItem'
-  get 'items/postItem/' => 'items#postItem'
-
+  post 'create' => 'welcome#create'
   get 'welcome/index'
 
   root 'welcome#index'
