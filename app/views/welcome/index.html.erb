@@ -1,6 +1,10 @@
 <h1>To-Do Checklist</h1>
 <% @items.each do |item| %>
- <input id="item-<%=item.id%>" type="checkbox" class="list-item"></input>
+  <%if item.is_checked %>
+    <input id="item-<%=item.id%>" type="checkbox" class="list-item" checked></input>
+  <% else %>
+    <input id="item-<%=item.id%>" type="checkbox" class="list-item"></input>
+  <% end %>
  <label class="item-label"><%=item.name %></label><br/></div>
 <% end %>
 <%= render "items/new" %>
