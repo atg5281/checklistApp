@@ -1,1 +1,18 @@
-<h1>To-Do Checklist</h1>
+<h1>To Do Checklist</h1>
+<form id="todo-list">
+  <span class="todo-wrap">
+    <input type="checkbox" id="1" checked/>
+    <label for="1" class="todo">
+      <i class="fa fa-check"></i>
+      Have a good idea
+    </label>
+    <span class="delete-item" title="remove">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </span>
+  <div id="add-todo">
+    <i class="fa fa-plus"></i>
+    Add an Item
+  </div>
+</form>
+<%= javascript_include_tag('checklist.js') %>
