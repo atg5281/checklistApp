@@ -4,49 +4,43 @@
 $border-color: rgb(244, 229, 186);
 $item-padding: 10px;
 
-body{
-  background:#EEEEEE;
+body {
+	background:#EEEEEE !important;
 	font-family: Helvetica;
+}
 
-  h1{
-    text-align: center;
-      font-weight: 200;
-      color: #454545;
-  }
+h1 {
+	text-align: center;
+    padding-top: 50px;
+    font-weight: 200;
+    color: #454545;
+}
 
-  input {
-  	margin: 0px;
-  }
+label {
+	display: inline;
+}
 
-  input:checked + label.item-label{
-    text-decoration: line-through;
-  }
+input {
+	margin: 0px;
+}
 
-  label.item-label{
-    font-weight: normal;
-    font-size: 1.5em;
-  }
+input:checked + label{
+  text-decoration: line-through;
+}
 
-  div.list-item{
-    padding-top: $item-padding;
-    padding-bottom: $item-padding;
-    padding-left: $item-padding;
-    background-color: rgb(255, 239, 193);
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-  }
+.checkItem {
+	width: 200px;
+  left: calc(50% - 100px);
+  position: relative;
+}
 
-  div.form-group{
-    margin-top: 20px;
-    padding-left: $item-padding;
-  }
+.item_form {
+	width: 300px;
+	left: calc(50% - 100px);
+	position: absolute;
+	padding-top: 5px;
+}
 
-  span.delete-item{
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    padding-right: $item-padding;
-    float:right;
-    cursor: pointer;
-  }
+span{
+  cursor: pointer;
 }
