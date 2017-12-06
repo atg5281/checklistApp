@@ -5,9 +5,18 @@ $border-color: rgb(244, 229, 186);
 $item-padding: 10px;
 
 body{
+  background:#EEEEEE;
+	font-family: Helvetica;
 
   h1{
     text-align: center;
+      padding-top: 50px;
+      font-weight: 200;
+      color: #454545;
+  }
+
+  input {
+  	margin: 0px;
   }
 
   input:checked + label.item-label{
